@@ -2,14 +2,15 @@ class PostsController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
+		
 		if params[:tag]
 			@posts = Post.tagged_with(params[:tag])
 			@articles = Article.tagged_with(params[:tag])
 			render 'tags/index'
-
 		else
 			@posts = Post.includes(:comments).where(['comments.recent = ?', true]).references(:comment)
 	    end
+	    
 	end
 
 	def new
