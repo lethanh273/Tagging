@@ -1,0 +1,9 @@
+<%= form_for [@post, @post.comments.build] , :remote =>true do |f| %>
+	<%= f.label :Username %><br>
+	<%= f.text_field :name %><br>
+	<br>
+	<%= f.label :body %><br>
+	<%= f.text_area :body %><br>
+	<br>
+	<%= f.submit %>
+<% end %>

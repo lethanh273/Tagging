@@ -1,0 +1,2 @@
+Tagging in blog
+3. Since we want to load all posts with 3 latest comments, we add a column recent for comments and use eager loading for post. 
