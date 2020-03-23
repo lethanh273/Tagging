@@ -6,8 +6,8 @@ class Article < ActiveRecord::Base
 	has_many :tags, through: :taggings
 
 	def self.tagged_with(name)
-                 p "ooo"  
-		Tag.find_by_name!(name).articles
+        p "Duyensexy"
+ 		Tag.find_by_name!(name).articles
 	end
 
 	def self.tag_counts
