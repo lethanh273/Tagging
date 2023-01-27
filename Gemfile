@@ -8,7 +8,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'devise', '~> 3.3.0'
+gem 'devise', '~> 3.5.10'
 gem 'byebug'
 
 group :development do
